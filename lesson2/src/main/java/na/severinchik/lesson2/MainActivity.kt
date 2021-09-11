@@ -45,6 +45,25 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun inputNumber(v:View){
+        val button = v as Button
+        when(button.text){
+            "1" ->  addToOutputField("1")
+            "2" ->  addToOutputField("2")
+            "3" ->  addToOutputField("3")
+            "4" ->  addToOutputField("4")
+            "5" ->  addToOutputField("5")
+            "6" ->  addToOutputField("6")
+            "7" ->  addToOutputField("7")
+            "8" ->  addToOutputField("8")
+            "9" ->  addToOutputField("9")
+            "0" ->  addToOutputField("0")
+        }
+    }
+    private fun addToOutputField(value:String){
+        output.text = "${output.text}$value"
+    }
+
 }
 //
 //open class A {
