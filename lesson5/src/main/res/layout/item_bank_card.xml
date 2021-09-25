@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ibc_card"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/purple_200"
+    app:cardCornerRadius="18dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ibc_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="1234 5667 2345 4556"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_marginBottom="@dimen/dp16"
+            app:layout_constraintEnd_toEndOf="@id/ibc_owner"
+            app:layout_constraintStart_toStartOf="@id/ibc_owner"
+            app:layout_constraintBottom_toTopOf="@id/ibc_currency"
+            />
+
+        <TextView
+            android:id="@+id/ibc_owner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp24"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Boris Britva" />
+
+        <TextView
+            android:id="@+id/ibc_currency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/ibc_owner"
+            app:layout_constraintEnd_toStartOf="@id/ibc_expire_data"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@id/ibc_owner"
+            tools:text="BYN" />
+
+        <TextView
+            android:id="@+id/ibc_expire_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/ibc_owner"
+            app:layout_constraintEnd_toEndOf="@id/ibc_owner"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toEndOf="@id/ibc_currency"
+            tools:text="24/22" />
+
+        <TextView
+            android:id="@+id/ibc_bank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Bank Name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
