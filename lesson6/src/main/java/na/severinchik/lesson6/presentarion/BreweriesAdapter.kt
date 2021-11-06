@@ -2,6 +2,7 @@ package na.severinchik.lesson6.presentarion
 
 import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -37,7 +38,6 @@ class BreweriesAdapter :
                 ibWebsiteUrl.movementMethod = LinkMovementMethod.getInstance()
             }
         }
-
     }
 
     class BreweryDiffCallback : DiffUtil.ItemCallback<BreweryItem>() {
